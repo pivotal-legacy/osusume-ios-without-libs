@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */; };
+		AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */; };
 		AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */; };
 		AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */; };
 		AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */; };
@@ -16,6 +18,10 @@
 		AEC45D7E1D9B489E006EAE69 /* AutoLayoutTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D7D1D9B489E006EAE69 /* AutoLayoutTextField.swift */; };
 		AEC45D801D9B49B5006EAE69 /* AutoLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D7F1D9B49B5006EAE69 /* AutoLayoutButton.swift */; };
 		AEC45D831D9B544D006EAE69 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */; };
+		AEC45D861D9B6923006EAE69 /* OsusumeApiStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D851D9B6923006EAE69 /* OsusumeApiStoreTests.swift */; };
+		AEC45D891D9B69B3006EAE69 /* OsusumeApiStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D881D9B69B3006EAE69 /* OsusumeApiStore.swift */; };
+		AEC45D8B1D9B84D7006EAE69 /* OsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */; };
+		AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
 		AEC45D461D9B44C8006EAE69 /* osusume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osusume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		AEC45D7D1D9B489E006EAE69 /* AutoLayoutTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutTextField.swift; sourceTree = "<group>"; };
 		AEC45D7F1D9B49B5006EAE69 /* AutoLayoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutButton.swift; sourceTree = "<group>"; };
 		AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		AEC45D851D9B6923006EAE69 /* OsusumeApiStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsusumeApiStoreTests.swift; sourceTree = "<group>"; };
+		AEC45D881D9B69B3006EAE69 /* OsusumeApiStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsusumeApiStore.swift; sourceTree = "<group>"; };
+		AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsusumeSession.swift; sourceTree = "<group>"; };
+		AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockOsusumeSession.swift; sourceTree = "<group>"; };
+		AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOsusumeSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEA0A4891D9BB2B000D64A8C /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
 		AEC45D3D1D9B44C8006EAE69 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,8 @@
 		AEC45D481D9B44C8006EAE69 /* osusume */ = {
 			isa = PBXGroup;
 			children = (
+				AEA0A4891D9BB2B000D64A8C /* Errors */,
+				AEC45D871D9B699E006EAE69 /* Stores */,
 				AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */,
 				AEC45D7B1D9B4819006EAE69 /* View Elements */,
 				AEC45D7A1D9B4813006EAE69 /* View Controllers */,
@@ -115,6 +137,7 @@
 		AEC45D601D9B44C8006EAE69 /* osusumeTests */ = {
 			isa = PBXGroup;
 			children = (
+				AEC45D841D9B6869006EAE69 /* Stores */,
 				AEC45D811D9B5416006EAE69 /* View Controllers */,
 				AEC45D631D9B44C8006EAE69 /* Info.plist */,
 			);
@@ -161,6 +184,33 @@
 				AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AEC45D841D9B6869006EAE69 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D851D9B6923006EAE69 /* OsusumeApiStoreTests.swift */,
+				AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		AEC45D871D9B699E006EAE69 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */,
+				AEC45D881D9B69B3006EAE69 /* OsusumeApiStore.swift */,
+				AEC45D901D9B8CDD006EAE69 /* Protocols */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		AEC45D901D9B8CDD006EAE69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC45D8B1D9B84D7006EAE69 /* OsusumeSession.swift in Sources */,
 				AEC45D7E1D9B489E006EAE69 /* AutoLayoutTextField.swift in Sources */,
 				AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */,
+				AEC45D891D9B69B3006EAE69 /* OsusumeApiStore.swift in Sources */,
+				AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */,
+				AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */,
 				AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */,
 				AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */,
 				AEC45D801D9B49B5006EAE69 /* AutoLayoutButton.swift in Sources */,
@@ -311,6 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC45D861D9B6923006EAE69 /* OsusumeApiStoreTests.swift in Sources */,
+				AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */,
 				AEC45D831D9B544D006EAE69 /* LoginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +602,7 @@
 				AEC45D731D9B44C8006EAE69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEC45D741D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusumeTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +611,7 @@
 				AEC45D761D9B44C8006EAE69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEC45D771D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusumeUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +620,7 @@
 				AEC45D791D9B44C8006EAE69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -17,5 +17,5 @@ class LoginViewControllerTests: XCTestCase {
         XCTAssertTrue(self.loginViewController.view.subviews.contains(self.loginViewController.nameTextField))
         XCTAssertTrue(self.loginViewController.view.subviews.contains(self.loginViewController.passwordTextField))
         XCTAssertTrue(self.loginViewController.view.subviews.contains(self.loginViewController.loginButton))
-    }
+    }    
 }
