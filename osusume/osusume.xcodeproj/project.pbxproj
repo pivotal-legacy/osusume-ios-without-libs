@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */; };
+		AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */; };
+		AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */; };
+		AEC45D541D9B44C8006EAE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC45D531D9B44C8006EAE69 /* Assets.xcassets */; };
+		AEC45D571D9B44C8006EAE69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */; };
+		AEC45D6D1D9B44C8006EAE69 /* osusumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D6C1D9B44C8006EAE69 /* osusumeUITests.swift */; };
+		AEC45D7E1D9B489E006EAE69 /* AutoLayoutTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D7D1D9B489E006EAE69 /* AutoLayoutTextField.swift */; };
+		AEC45D801D9B49B5006EAE69 /* AutoLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D7F1D9B49B5006EAE69 /* AutoLayoutButton.swift */; };
+		AEC45D831D9B544D006EAE69 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEC45D5E1D9B44C8006EAE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC45D3E1D9B44C8006EAE69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC45D451D9B44C8006EAE69;
+			remoteInfo = osusume;
+		};
+		AEC45D691D9B44C8006EAE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC45D3E1D9B44C8006EAE69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC45D451D9B44C8006EAE69;
+			remoteInfo = osusume;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEC45D461D9B44C8006EAE69 /* osusume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osusume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AEC45D511D9B44C8006EAE69 /* osusume.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = osusume.xcdatamodel; sourceTree = "<group>"; };
+		AEC45D531D9B44C8006EAE69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC45D561D9B44C8006EAE69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEC45D581D9B44C8006EAE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC45D5D1D9B44C8006EAE69 /* osusumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = osusumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC45D631D9B44C8006EAE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC45D681D9B44C8006EAE69 /* osusumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = osusumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC45D6C1D9B44C8006EAE69 /* osusumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = osusumeUITests.swift; sourceTree = "<group>"; };
+		AEC45D6E1D9B44C8006EAE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC45D7D1D9B489E006EAE69 /* AutoLayoutTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutTextField.swift; sourceTree = "<group>"; };
+		AEC45D7F1D9B49B5006EAE69 /* AutoLayoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutButton.swift; sourceTree = "<group>"; };
+		AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC45D431D9B44C8006EAE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC45D5A1D9B44C8006EAE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC45D651D9B44C8006EAE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEC45D3D1D9B44C8006EAE69 = {
+			isa = PBXGroup;
+			children = (
+				AEC45D481D9B44C8006EAE69 /* osusume */,
+				AEC45D601D9B44C8006EAE69 /* osusumeTests */,
+				AEC45D6B1D9B44C8006EAE69 /* osusumeUITests */,
+				AEC45D471D9B44C8006EAE69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC45D471D9B44C8006EAE69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D461D9B44C8006EAE69 /* osusume.app */,
+				AEC45D5D1D9B44C8006EAE69 /* osusumeTests.xctest */,
+				AEC45D681D9B44C8006EAE69 /* osusumeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC45D481D9B44C8006EAE69 /* osusume */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */,
+				AEC45D7B1D9B4819006EAE69 /* View Elements */,
+				AEC45D7A1D9B4813006EAE69 /* View Controllers */,
+				AEC45D531D9B44C8006EAE69 /* Assets.xcassets */,
+				AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */,
+				AEC45D581D9B44C8006EAE69 /* Info.plist */,
+				AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */,
+			);
+			path = osusume;
+			sourceTree = "<group>";
+		};
+		AEC45D601D9B44C8006EAE69 /* osusumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D811D9B5416006EAE69 /* View Controllers */,
+				AEC45D631D9B44C8006EAE69 /* Info.plist */,
+			);
+			path = osusumeTests;
+			sourceTree = "<group>";
+		};
+		AEC45D6B1D9B44C8006EAE69 /* osusumeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D6C1D9B44C8006EAE69 /* osusumeUITests.swift */,
+				AEC45D6E1D9B44C8006EAE69 /* Info.plist */,
+			);
+			path = osusumeUITests;
+			sourceTree = "<group>";
+		};
+		AEC45D7A1D9B4813006EAE69 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AEC45D7B1D9B4819006EAE69 /* View Elements */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D7C1D9B4825006EAE69 /* Autolayout */,
+			);
+			name = "View Elements";
+			sourceTree = "<group>";
+		};
+		AEC45D7C1D9B4825006EAE69 /* Autolayout */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D7D1D9B489E006EAE69 /* AutoLayoutTextField.swift */,
+				AEC45D7F1D9B49B5006EAE69 /* AutoLayoutButton.swift */,
+			);
+			name = Autolayout;
+			sourceTree = "<group>";
+		};
+		AEC45D811D9B5416006EAE69 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC45D451D9B44C8006EAE69 /* osusume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC45D711D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusume" */;
+			buildPhases = (
+				AEC45D421D9B44C8006EAE69 /* Sources */,
+				AEC45D431D9B44C8006EAE69 /* Frameworks */,
+				AEC45D441D9B44C8006EAE69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = osusume;
+			productName = osusume;
+			productReference = AEC45D461D9B44C8006EAE69 /* osusume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC45D5C1D9B44C8006EAE69 /* osusumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC45D741D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusumeTests" */;
+			buildPhases = (
+				AEC45D591D9B44C8006EAE69 /* Sources */,
+				AEC45D5A1D9B44C8006EAE69 /* Frameworks */,
+				AEC45D5B1D9B44C8006EAE69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC45D5F1D9B44C8006EAE69 /* PBXTargetDependency */,
+			);
+			name = osusumeTests;
+			productName = osusumeTests;
+			productReference = AEC45D5D1D9B44C8006EAE69 /* osusumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEC45D671D9B44C8006EAE69 /* osusumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC45D771D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusumeUITests" */;
+			buildPhases = (
+				AEC45D641D9B44C8006EAE69 /* Sources */,
+				AEC45D651D9B44C8006EAE69 /* Frameworks */,
+				AEC45D661D9B44C8006EAE69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC45D6A1D9B44C8006EAE69 /* PBXTargetDependency */,
+			);
+			name = osusumeUITests;
+			productName = osusumeUITests;
+			productReference = AEC45D681D9B44C8006EAE69 /* osusumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC45D3E1D9B44C8006EAE69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = pivotal;
+				TargetAttributes = {
+					AEC45D451D9B44C8006EAE69 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9G43X93F7Z;
+						ProvisioningStyle = Automatic;
+					};
+					AEC45D5C1D9B44C8006EAE69 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9G43X93F7Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AEC45D451D9B44C8006EAE69;
+					};
+					AEC45D671D9B44C8006EAE69 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9G43X93F7Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AEC45D451D9B44C8006EAE69;
+					};
+				};
+			};
+			buildConfigurationList = AEC45D411D9B44C8006EAE69 /* Build configuration list for PBXProject "osusume" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEC45D3D1D9B44C8006EAE69;
+			productRefGroup = AEC45D471D9B44C8006EAE69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC45D451D9B44C8006EAE69 /* osusume */,
+				AEC45D5C1D9B44C8006EAE69 /* osusumeTests */,
+				AEC45D671D9B44C8006EAE69 /* osusumeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC45D441D9B44C8006EAE69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC45D571D9B44C8006EAE69 /* LaunchScreen.storyboard in Resources */,
+				AEC45D541D9B44C8006EAE69 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC45D5B1D9B44C8006EAE69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC45D661D9B44C8006EAE69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC45D421D9B44C8006EAE69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC45D7E1D9B489E006EAE69 /* AutoLayoutTextField.swift in Sources */,
+				AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */,
+				AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */,
+				AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */,
+				AEC45D801D9B49B5006EAE69 /* AutoLayoutButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC45D591D9B44C8006EAE69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC45D831D9B544D006EAE69 /* LoginViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC45D641D9B44C8006EAE69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC45D6D1D9B44C8006EAE69 /* osusumeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEC45D5F1D9B44C8006EAE69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC45D451D9B44C8006EAE69 /* osusume */;
+			targetProxy = AEC45D5E1D9B44C8006EAE69 /* PBXContainerItemProxy */;
+		};
+		AEC45D6A1D9B44C8006EAE69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC45D451D9B44C8006EAE69 /* osusume */;
+			targetProxy = AEC45D691D9B44C8006EAE69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC45D561D9B44C8006EAE69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC45D6F1D9B44C8006EAE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEC45D701D9B44C8006EAE69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC45D721D9B44C8006EAE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9G43X93F7Z;
+				INFOPLIST_FILE = osusume/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusume;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEC45D731D9B44C8006EAE69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9G43X93F7Z;
+				INFOPLIST_FILE = osusume/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusume;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AEC45D751D9B44C8006EAE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9G43X93F7Z;
+				INFOPLIST_FILE = osusumeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusumeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/osusume.app/osusume";
+			};
+			name = Debug;
+		};
+		AEC45D761D9B44C8006EAE69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9G43X93F7Z;
+				INFOPLIST_FILE = osusumeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusumeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/osusume.app/osusume";
+			};
+			name = Release;
+		};
+		AEC45D781D9B44C8006EAE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9G43X93F7Z;
+				INFOPLIST_FILE = osusumeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = osusume;
+			};
+			name = Debug;
+		};
+		AEC45D791D9B44C8006EAE69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9G43X93F7Z;
+				INFOPLIST_FILE = osusumeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = osusume;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC45D411D9B44C8006EAE69 /* Build configuration list for PBXProject "osusume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC45D6F1D9B44C8006EAE69 /* Debug */,
+				AEC45D701D9B44C8006EAE69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC45D711D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC45D721D9B44C8006EAE69 /* Debug */,
+				AEC45D731D9B44C8006EAE69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEC45D741D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC45D751D9B44C8006EAE69 /* Debug */,
+				AEC45D761D9B44C8006EAE69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEC45D771D9B44C8006EAE69 /* Build configuration list for PBXNativeTarget "osusumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC45D781D9B44C8006EAE69 /* Debug */,
+				AEC45D791D9B44C8006EAE69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEC45D511D9B44C8006EAE69 /* osusume.xcdatamodel */,
+			);
+			currentVersion = AEC45D511D9B44C8006EAE69 /* osusume.xcdatamodel */;
+			path = osusume.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEC45D3E1D9B44C8006EAE69 /* Project object */;
+}
