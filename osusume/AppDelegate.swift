@@ -98,7 +98,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func clearUserDefaults() {
         
         let appDomain = Bundle.main.bundleIdentifier
-        
         UserDefaults.standard.removePersistentDomain(forName: appDomain!)
     }
 }

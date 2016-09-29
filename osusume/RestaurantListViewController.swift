@@ -49,7 +49,7 @@ class RestaurantListViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if UserDefaults.standard.string(forKey: "token") == nil {
+        guard TokenManager.hasToken() else {
             
             let loginViewController = LoginViewController()
             
@@ -58,6 +58,8 @@ class RestaurantListViewController: UIViewController {
                 animated: true,
                 completion: nil
             )
+
+            return
         }
     }
 
@@ -83,9 +85,7 @@ class RestaurantListViewController: UIViewController {
 
     // MARK: - Actions
     func logout() {
-        if UserDefaults.standard.value(forKey: "token") != nil {
-            UserDefaults.standard.removeObject(forKey: "token")
-        }
+        TokenManager.deleteToken()
 
         let loginViewController = LoginViewController()
 

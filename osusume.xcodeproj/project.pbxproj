@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */; };
 		AE9B311E1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B311D1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift */; };
+		AE9B31241D9D08CD001C8FEE /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B31231D9D08CD001C8FEE /* TokenManager.swift */; };
 		AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */; };
 		AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */; };
 		AEA0A48D1D9CA5C100D64A8C /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HttpUtilities.swift"; sourceTree = "<group>"; };
 		AE9B311D1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewControllerTests.swift; sourceTree = "<group>"; };
+		AE9B31231D9D08CD001C8FEE /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
 		AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutLabel.swift; sourceTree = "<group>"; };
@@ -106,6 +108,24 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		AE9B31211D9D0881001C8FEE /* Xcode resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEC45D581D9B44C8006EAE69 /* Info.plist */,
+				AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */,
+				AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */,
+			);
+			name = "Xcode resources";
+			sourceTree = "<group>";
+		};
+		AE9B31221D9D08B4001C8FEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AE9B31231D9D08CD001C8FEE /* TokenManager.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		AEA0A4891D9BB2B000D64A8C /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,16 +157,15 @@
 		AEC45D481D9B44C8006EAE69 /* osusume */ = {
 			isa = PBXGroup;
 			children = (
+				AE9B31221D9D08B4001C8FEE /* Helpers */,
 				AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */,
 				AEC45D531D9B44C8006EAE69 /* Assets.xcassets */,
 				AEA0A4891D9BB2B000D64A8C /* Errors */,
 				AE33E5E01D9CDD4B009A78F3 /* Extensions */,
-				AEC45D581D9B44C8006EAE69 /* Info.plist */,
-				AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */,
-				AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */,
 				AEC45D871D9B699E006EAE69 /* Stores */,
 				AEC45D7A1D9B4813006EAE69 /* View Controllers */,
 				AEC45D7B1D9B4819006EAE69 /* View Elements */,
+				AE9B31211D9D0881001C8FEE /* Xcode resources */,
 			);
 			path = osusume;
 			sourceTree = "<group>";
@@ -376,6 +395,7 @@
 				AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */,
 				AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */,
 				AEA0A48D1D9CA5C100D64A8C /* RestaurantListViewController.swift in Sources */,
+				AE9B31241D9D08CD001C8FEE /* TokenManager.swift in Sources */,
 				AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */,
 				AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */,
 				AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */,

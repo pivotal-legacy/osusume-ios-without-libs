@@ -24,7 +24,7 @@ class RestaurantListViewControllerTests: XCTestCase {
 
 
     func test_tappingLogoutButton_deletesToken() {
-        UserDefaults.standard.set("testToken", forKey: "token")
+        TokenManager.setToken(token: "testToken")
 
         UIApplication.shared.sendAction(
             self.restaurantListViewController.logoutButton.action!,
@@ -33,11 +33,11 @@ class RestaurantListViewControllerTests: XCTestCase {
             for: nil
         )
 
-        XCTAssertNil(UserDefaults.standard.value(forKey: "token"))
+        XCTAssertFalse(TokenManager.hasToken())
     }
 
     func test_tappingLogoutButton_showsLoginScreen() {
-        UserDefaults.standard.set("testToken", forKey: "token")
+        TokenManager.setToken(token: "testToken")
 
         UIApplication.shared.sendAction(
             self.restaurantListViewController.logoutButton.action!,

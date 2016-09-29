@@ -95,17 +95,14 @@ class LoginViewController: UIViewController {
     }
     
     func login() {
-        
         OsusumeApiStore().login(
             name: self.nameTextField.text!,
             password: self.passwordTextField.text!,
             closure: {
                 (error: NSError?, token: String?) in
-            
-                if error == nil && token != nil {
 
-                    UserDefaults.standard.set(token!, forKey: "token")
-                    
+                if error == nil && token != nil {
+                    TokenManager.setToken(token: token!)
                     self.dismiss(animated: true, completion: nil)
                 }
         })
