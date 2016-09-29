@@ -10,8 +10,22 @@ class NetworkOsusumeSession: OsusumeSession {
             with: urlRequest,
             completionHandler: {
                 (data: Data?, response: URLResponse?, error: Error?) in
-                
-                sessionCompletionHandler(error, data)
+
+                if let httpResponse = response as? HTTPURLResponse {
+
+                    switch httpResponse.statusCode {
+                    case 200:
+                        sessionCompletionHandler(error, data)
+                    default:
+                        let httpStatusError = NSError(
+                            domain: "NetworkOsusumeSession_dataTask",
+                            code: ErrorCode.HttpStatusCodeError.rawValue,
+                            userInfo: nil
+                        )
+                        
+                        sessionCompletionHandler(httpStatusError, data)
+                    }
+                }
             }
         ).resume()
     }

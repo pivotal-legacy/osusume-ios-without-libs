@@ -8,6 +8,7 @@ class osusumeUITests: XCTestCase {
     
         let application = XCUIApplication()
         application.launchArguments = ["isTesting"]
+        application.launchEnvironment = ["BASE_URL":"http://localhost:3000"]
         application.launch()    
     }
     

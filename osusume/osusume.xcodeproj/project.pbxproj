@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */; };
 		AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */; };
 		AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */; };
 		AEA0A48D1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HttpUtilities.swift"; sourceTree = "<group>"; };
 		AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
 		AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantInfoViewController.swift; sourceTree = "<group>"; };
 		AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutLabel.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE33E5E01D9CDD4B009A78F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		AEA0A4891D9BB2B000D64A8C /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		AEC45D481D9B44C8006EAE69 /* osusume */ = {
 			isa = PBXGroup;
 			children = (
+				AE33E5E01D9CDD4B009A78F3 /* Extensions */,
 				AEA0A4891D9BB2B000D64A8C /* Errors */,
 				AEC45D871D9B699E006EAE69 /* Stores */,
 				AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */,
@@ -359,6 +370,7 @@
 				AEC45D7E1D9B489E006EAE69 /* AutoLayoutTextField.swift in Sources */,
 				AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */,
 				AEC45D891D9B69B3006EAE69 /* OsusumeApiStore.swift in Sources */,
+				AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */,
 				AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */,
 				AEA0A48D1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift in Sources */,
 				AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */,
@@ -513,6 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9G43X93F7Z;
 				INFOPLIST_FILE = osusume/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9G43X93F7Z;
 				INFOPLIST_FILE = osusume/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.osusume;
 				PRODUCT_NAME = "$(TARGET_NAME)";

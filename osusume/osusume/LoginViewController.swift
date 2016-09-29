@@ -103,14 +103,11 @@ class LoginViewController: UIViewController {
                 (error: NSError?, token: String?) in
             
                 if error == nil && token != nil {
-                    
+
                     UserDefaults.standard.set(token!, forKey: "token")
                     
                     self.dismiss(animated: true, completion: nil)
                 }
         })
     }
-    
-
 }
-
