@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */; };
 		AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */; };
+		AEA0A48D1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */; };
+		AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */; };
 		AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */; };
 		AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */; };
 		AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
+		AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantInfoViewController.swift; sourceTree = "<group>"; };
+		AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutLabel.swift; sourceTree = "<group>"; };
 		AEC45D461D9B44C8006EAE69 /* osusume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osusume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */,
+				AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			children = (
 				AEC45D7D1D9B489E006EAE69 /* AutoLayoutTextField.swift */,
 				AEC45D7F1D9B49B5006EAE69 /* AutoLayoutButton.swift */,
+				AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */,
 			);
 			name = Autolayout;
 			sourceTree = "<group>";
@@ -354,6 +360,8 @@
 				AEC45D521D9B44C8006EAE69 /* osusume.xcdatamodeld in Sources */,
 				AEC45D891D9B69B3006EAE69 /* OsusumeApiStore.swift in Sources */,
 				AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */,
+				AEA0A48D1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift in Sources */,
+				AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */,
 				AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */,
 				AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */,
 				AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */,

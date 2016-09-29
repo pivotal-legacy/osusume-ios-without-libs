@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         
+        super.viewWillLayoutSubviews()
+        
         let views: [String:UIView] = [
             "nameTextField": self.nameTextField,
             "passwordTextField": self.passwordTextField,
@@ -79,6 +81,11 @@ class LoginViewController: UIViewController {
     private func setupButton() {
         self.loginButton.setTitle("Login", for: UIControlState.normal)
         self.loginButton.backgroundColor = UIColor.red
+        self.loginButton.addTarget(
+            self,
+            action: #selector(self.login),
+            for: UIControlEvents.touchUpInside
+        )
     }
     
     private func addSubviews() {
@@ -86,6 +93,24 @@ class LoginViewController: UIViewController {
         self.view.addSubview(self.passwordTextField)
         self.view.addSubview(self.loginButton)
     }
+    
+    func login() {
+        
+        OsusumeApiStore().login(
+            name: self.nameTextField.text!,
+            password: self.passwordTextField.text!,
+            closure: {
+                (error: NSError?, token: String?) in
+            
+                if error == nil && token != nil {
+                    
+                    UserDefaults.standard.set(token!, forKey: "token")
+                    
+                    self.dismiss(animated: true, completion: nil)
+                }
+        })
+    }
+    
 
 }
 

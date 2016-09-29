@@ -3,9 +3,9 @@ import Foundation
 class NetworkOsusumeSession: OsusumeSession {
     
     func dataTask(urlRequest: URLRequest, sessionCompletionHandler: @escaping (_ error: Error?, _ data: Data?) -> Void) {
-        
-        let session = URLSession(configuration: URLSessionConfiguration())
-        
+
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+
         session.dataTask(
             with: urlRequest,
             completionHandler: {
@@ -14,7 +14,5 @@ class NetworkOsusumeSession: OsusumeSession {
                 sessionCompletionHandler(error, data)
             }
         ).resume()
-
     }
-    
 }

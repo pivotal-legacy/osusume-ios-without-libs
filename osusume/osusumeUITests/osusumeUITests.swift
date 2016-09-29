@@ -6,12 +6,20 @@ class osusumeUITests: XCTestCase {
     override func setUp() {
         super.setUp()
     
-        XCUIApplication().launch()
+        let application = XCUIApplication()
+        application.launchArguments = ["isTesting"]
+        application.launch()    
     }
     
-    func test_loginScreenViewElementsAreHittable() {
-        XCTAssertTrue(XCUIApplication().textFields["Name"].isHittable)
-        XCTAssertTrue(XCUIApplication().textFields["Password"].isHittable)
-        XCTAssertTrue(XCUIApplication().buttons["Login"].isHittable)
+    func test_addInfoScreenShowsWhenLoginIsSuccessful() {
+        XCUIApplication().textFields["Name"].tap()
+        XCUIApplication().textFields["Name"].typeText("danny")
+        
+        XCUIApplication().textFields["Password"].tap()
+        XCUIApplication().textFields["Password"].typeText("password")
+        
+        XCUIApplication().buttons["Login"].tap()
+        
+        XCTAssertTrue(XCUIApplication().staticTexts["Add Info"].exists)
     }
 }
