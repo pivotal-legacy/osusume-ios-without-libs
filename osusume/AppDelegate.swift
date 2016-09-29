@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         window?.backgroundColor = UIColor.white
-        
-        let rootViewController = RestaurantListViewController()
+
+        let rootViewController = UINavigationController(rootViewController: RestaurantListViewController())
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
         

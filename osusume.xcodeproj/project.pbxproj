@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */; };
+		AE9B311E1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B311D1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift */; };
 		AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */; };
 		AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */; };
 		AEA0A48D1D9CA5C100D64A8C /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HttpUtilities.swift"; sourceTree = "<group>"; };
+		AE9B311D1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewControllerTests.swift; sourceTree = "<group>"; };
 		AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
 		AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutLabel.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */,
+				AE9B311D1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC45D861D9B6923006EAE69 /* OsusumeApiStoreTests.swift in Sources */,
+				AE9B311E1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift in Sources */,
 				AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */,
 				AEC45D831D9B544D006EAE69 /* LoginViewControllerTests.swift in Sources */,
 			);

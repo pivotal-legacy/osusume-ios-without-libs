@@ -5,13 +5,14 @@ class RestaurantListViewController: UIViewController {
 
     // MARK: - Properties
     var titleLabel = AutoLayoutLabel()
-    
+    var logoutButton = UIBarButtonItem()
+
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        self.setupButtons()
         self.setupLabels()
-        
         self.addSubviews()
     }
     
@@ -59,13 +60,39 @@ class RestaurantListViewController: UIViewController {
             )
         }
     }
-    
+
     // MARK: - View Config
+    private func setupButtons() {
+        self.logoutButton = UIBarButtonItem(
+            title: "Logout",
+            style: UIBarButtonItemStyle.plain,
+            target: self,
+            action: #selector(self.logout)
+        )
+
+        self.navigationItem.leftBarButtonItem = self.logoutButton
+    }
+
     private func setupLabels() {
         self.titleLabel.text = "Restaurants"
     }
     
     private func addSubviews() {
         self.view.addSubview(self.titleLabel)
+    }
+
+    // MARK: - Actions
+    func logout() {
+        if UserDefaults.standard.value(forKey: "token") != nil {
+            UserDefaults.standard.removeObject(forKey: "token")
+        }
+
+        let loginViewController = LoginViewController()
+
+        self.navigationController?.present(
+            loginViewController,
+            animated: true,
+            completion: nil
+        )
     }
 }
