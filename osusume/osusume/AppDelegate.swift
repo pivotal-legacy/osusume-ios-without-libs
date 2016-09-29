@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.backgroundColor = UIColor.white
         
-        let rootViewController = AddRestaurantInfoViewController()
+        let rootViewController = RestaurantListViewController()
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
         

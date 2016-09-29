@@ -21,6 +21,6 @@ class osusumeUITests: XCTestCase {
         
         XCUIApplication().buttons["Login"].tap()
         
-        XCTAssertTrue(XCUIApplication().staticTexts["Add Info"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["Restaurants"].exists)
     }
 }

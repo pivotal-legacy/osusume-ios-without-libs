@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class AddRestaurantInfoViewController: UIViewController {
+class RestaurantListViewController: UIViewController {
 
     // MARK: - Properties
     var titleLabel = AutoLayoutLabel()
@@ -20,7 +20,7 @@ class AddRestaurantInfoViewController: UIViewController {
         
         let views: [String:UIView] = [
             "titleLabel": self.titleLabel,
-            ]
+        ]
         
         //Vertical
         NSLayoutConstraint.activate(
@@ -62,7 +62,7 @@ class AddRestaurantInfoViewController: UIViewController {
     
     // MARK: - View Config
     private func setupLabels() {
-        self.titleLabel.text = "Add Info"
+        self.titleLabel.text = "Restaurants"
     }
     
     private func addSubviews() {

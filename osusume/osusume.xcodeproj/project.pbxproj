@@ -10,7 +10,7 @@
 		AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */; };
 		AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */; };
 		AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */; };
-		AEA0A48D1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */; };
+		AEA0A48D1D9CA5C100D64A8C /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */; };
 		AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */; };
 		AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */; };
 		AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		AE33E5E11D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HttpUtilities.swift"; sourceTree = "<group>"; };
 		AEA0A48A1D9BB2ED00D64A8C /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
-		AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantInfoViewController.swift; sourceTree = "<group>"; };
+		AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		AEA0A48E1D9CAFDD00D64A8C /* AutoLayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutLabel.swift; sourceTree = "<group>"; };
 		AEC45D461D9B44C8006EAE69 /* osusume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osusume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,16 +135,16 @@
 		AEC45D481D9B44C8006EAE69 /* osusume */ = {
 			isa = PBXGroup;
 			children = (
-				AE33E5E01D9CDD4B009A78F3 /* Extensions */,
-				AEA0A4891D9BB2B000D64A8C /* Errors */,
-				AEC45D871D9B699E006EAE69 /* Stores */,
 				AEC45D491D9B44C8006EAE69 /* AppDelegate.swift */,
-				AEC45D7B1D9B4819006EAE69 /* View Elements */,
-				AEC45D7A1D9B4813006EAE69 /* View Controllers */,
 				AEC45D531D9B44C8006EAE69 /* Assets.xcassets */,
-				AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */,
+				AEA0A4891D9BB2B000D64A8C /* Errors */,
+				AE33E5E01D9CDD4B009A78F3 /* Extensions */,
 				AEC45D581D9B44C8006EAE69 /* Info.plist */,
+				AEC45D551D9B44C8006EAE69 /* LaunchScreen.storyboard */,
 				AEC45D501D9B44C8006EAE69 /* osusume.xcdatamodeld */,
+				AEC45D871D9B699E006EAE69 /* Stores */,
+				AEC45D7A1D9B4813006EAE69 /* View Controllers */,
+				AEC45D7B1D9B4819006EAE69 /* View Elements */,
 			);
 			path = osusume;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */,
-				AEA0A48C1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift */,
+				AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 				AEC45D891D9B69B3006EAE69 /* OsusumeApiStore.swift in Sources */,
 				AE33E5E21D9CDDA0009A78F3 /* URLRequest+HttpUtilities.swift in Sources */,
 				AEA0A48B1D9BB2ED00D64A8C /* ErrorCodes.swift in Sources */,
-				AEA0A48D1D9CA5C100D64A8C /* AddRestaurantInfoViewController.swift in Sources */,
+				AEA0A48D1D9CA5C100D64A8C /* RestaurantListViewController.swift in Sources */,
 				AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */,
 				AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */,
 				AEC45D4C1D9B44C8006EAE69 /* LoginViewController.swift in Sources */,
