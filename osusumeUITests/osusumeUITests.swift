@@ -8,8 +8,8 @@ class osusumeUITests: XCTestCase {
     
         let application = XCUIApplication()
         application.launchArguments = ["isTesting"]
-        application.launchEnvironment = ["BASE_URL":"http://localhost:3000"]
-        application.launch()    
+        application.launchEnvironment = ProcessInfo().environment
+        application.launch()
     }
     
     func test_addInfoScreenShowsWhenLoginIsSuccessful() {
@@ -18,9 +18,17 @@ class osusumeUITests: XCTestCase {
         
         XCUIApplication().textFields["Password"].tap()
         XCUIApplication().textFields["Password"].typeText("password")
-        
+
+        let restaurantListPredicate = NSPredicate(format: "exists == true", argumentArray: nil)
+
+        let restaurantListText = XCUIApplication().staticTexts["Restaurants"]
+
+        expectation(for: restaurantListPredicate, evaluatedWith: restaurantListText, handler: nil)
+
         XCUIApplication().buttons["Login"].tap()
-        
-        XCTAssertTrue(XCUIApplication().staticTexts["Restaurants"].exists)
+
+        waitForExpectations(timeout: 5, handler: nil)
+
+        XCTAssertTrue(restaurantListText.exists)
     }
 }

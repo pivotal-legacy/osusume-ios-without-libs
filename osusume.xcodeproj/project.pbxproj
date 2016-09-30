@@ -27,6 +27,7 @@
 		AEC45D891D9B69B3006EAE69 /* OsusumeApiStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D881D9B69B3006EAE69 /* OsusumeApiStore.swift */; };
 		AEC45D8B1D9B84D7006EAE69 /* OsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */; };
 		AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */; };
+		AECE6BCE1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE6BCD1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsusumeSession.swift; sourceTree = "<group>"; };
 		AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockOsusumeSession.swift; sourceTree = "<group>"; };
 		AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOsusumeSession.swift; sourceTree = "<group>"; };
+		AECE6BCD1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HttpUtilitiesTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		AEC45D601D9B44C8006EAE69 /* osusumeTests */ = {
 			isa = PBXGroup;
 			children = (
+				AECE6BCA1D9DF41B004E964A /* Extensions */,
 				AEC45D841D9B6869006EAE69 /* Stores */,
 				AEC45D811D9B5416006EAE69 /* View Controllers */,
 				AEC45D631D9B44C8006EAE69 /* Info.plist */,
@@ -250,6 +253,14 @@
 				AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		AECE6BCA1D9DF41B004E964A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AECE6BCD1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +423,7 @@
 				AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */,
 				AEC45D861D9B6923006EAE69 /* OsusumeApiStoreTests.swift in Sources */,
 				AE9B311E1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift in Sources */,
+				AECE6BCE1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
