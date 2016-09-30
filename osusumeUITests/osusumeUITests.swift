@@ -12,23 +12,25 @@ class osusumeUITests: XCTestCase {
         application.launch()
     }
     
-    func test_addInfoScreenShowsWhenLoginIsSuccessful() {
+    func test_restaurantCreationSuccessful() {
         XCUIApplication().textFields["Name"].tap()
         XCUIApplication().textFields["Name"].typeText("danny")
         
         XCUIApplication().textFields["Password"].tap()
         XCUIApplication().textFields["Password"].typeText("password")
 
-        let restaurantListPredicate = NSPredicate(format: "exists == true", argumentArray: nil)
-
         let restaurantListText = XCUIApplication().staticTexts["Restaurants"]
+        let loginButton = XCUIApplication().buttons["Login"]
 
-        expectation(for: restaurantListPredicate, evaluatedWith: restaurantListText, handler: nil)
-
-        XCUIApplication().buttons["Login"].tap()
-
-        waitForExpectations(timeout: 5, handler: nil)
+        self.tapAndWaitForExpectedElementToBeVisible(expectedElement: restaurantListText, tappableElement: loginButton)
 
         XCTAssertTrue(restaurantListText.exists)
+
+        let addRestaurantScreenText = XCUIApplication().staticTexts["Add Restaurant Info"]
+        let addRestaurantButton = XCUIApplication().buttons["Add Restaurant"]
+
+        self.tapAndWaitForExpectedElementToBeVisible(expectedElement: addRestaurantScreenText, tappableElement: addRestaurantButton)
+
+        XCTAssertTrue(addRestaurantScreenText.exists)
     }
 }

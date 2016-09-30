@@ -6,6 +6,7 @@ class RestaurantListViewController: UIViewController {
     // MARK: - Properties
     var titleLabel = AutoLayoutLabel()
     var logoutButton = UIBarButtonItem()
+    var addRestaurantButton = UIBarButtonItem()
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -73,6 +74,16 @@ class RestaurantListViewController: UIViewController {
         )
 
         self.navigationItem.leftBarButtonItem = self.logoutButton
+
+        self.addRestaurantButton = UIBarButtonItem(
+            title: "Add Restaurant",
+            style: UIBarButtonItemStyle.plain,
+            target: self,
+            action: #selector(self.showAddRestaurantScreen)
+        )
+
+        self.navigationItem.rightBarButtonItem = self.addRestaurantButton
+
     }
 
     private func setupLabels() {
@@ -93,6 +104,15 @@ class RestaurantListViewController: UIViewController {
             loginViewController,
             animated: true,
             completion: nil
+        )
+    }
+
+    func showAddRestaurantScreen() {
+        let addRestaurantViewController = AddRestaurantViewController()
+
+        self.navigationController?.pushViewController(
+            addRestaurantViewController,
+            animated: true
         )
     }
 }

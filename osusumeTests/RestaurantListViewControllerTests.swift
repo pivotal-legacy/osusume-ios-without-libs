@@ -22,7 +22,6 @@ class RestaurantListViewControllerTests: XCTestCase {
         XCTAssertEqual(self.restaurantListViewController.navigationItem.leftBarButtonItem?.title, "Logout")
     }
 
-
     func test_tappingLogoutButton_deletesToken() {
         TokenManager.setToken(token: "testToken")
 
@@ -49,4 +48,20 @@ class RestaurantListViewControllerTests: XCTestCase {
         XCTAssertTrue(self.restaurantListViewController.presentedViewController is LoginViewController)
     }
 
+    func test_showsAddRestaurantButton() {
+        XCTAssertEqual(self.restaurantListViewController.navigationItem.rightBarButtonItem?.title, "Add Restaurant")
+    }
+
+    func test_tappingAddRestaurantButton_showsAddRestaurantScreen() {
+        UIApplication.shared.sendAction(
+            self.restaurantListViewController.addRestaurantButton.action!,
+            to: self.restaurantListViewController.addRestaurantButton.target,
+            from: self,
+            for: nil
+        )
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+            XCTAssertTrue(self.navigationController.viewControllers.last is AddRestaurantViewController)
+        })
+    }
 }

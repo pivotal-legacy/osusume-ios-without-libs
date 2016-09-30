@@ -1,4 +1,4 @@
-tests: sort units
+tests: sort units printArt
 
 ci: units 
 
@@ -13,4 +13,7 @@ sort:
 
 bump:
 	@./bin/bumpBuild.sh
+
+printArt:
+	@./bin/printArt.sh
 

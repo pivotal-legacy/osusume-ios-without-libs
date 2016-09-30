@@ -28,6 +28,9 @@
 		AEC45D8B1D9B84D7006EAE69 /* OsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8A1D9B84D7006EAE69 /* OsusumeSession.swift */; };
 		AEC45D8F1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */; };
 		AECE6BCE1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE6BCD1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift */; };
+		AECE6BD01D9E07F2004E964A /* AddRestaurantViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE6BCF1D9E07F2004E964A /* AddRestaurantViewControllerTests.swift */; };
+		AECE6BD21D9E087F004E964A /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE6BD11D9E087F004E964A /* AddRestaurantViewController.swift */; };
+		AECE6BD51D9E3DD2004E964A /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE6BD41D9E3DD2004E964A /* XCTestCase+Wait.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		AEC45D8C1D9B861B006EAE69 /* MockOsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockOsusumeSession.swift; sourceTree = "<group>"; };
 		AEC45D8E1D9B8C9E006EAE69 /* NetworkOsusumeSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOsusumeSession.swift; sourceTree = "<group>"; };
 		AECE6BCD1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HttpUtilitiesTests.swift"; sourceTree = "<group>"; };
+		AECE6BCF1D9E07F2004E964A /* AddRestaurantViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewControllerTests.swift; sourceTree = "<group>"; };
+		AECE6BD11D9E087F004E964A /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+		AECE6BD41D9E3DD2004E964A /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,7 @@
 		AEC45D6B1D9B44C8006EAE69 /* osusumeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				AECE6BD31D9E115C004E964A /* Test Extensions */,
 				AEC45D6E1D9B44C8006EAE69 /* Info.plist */,
 				AEC45D6C1D9B44C8006EAE69 /* osusumeUITests.swift */,
 			);
@@ -195,6 +202,7 @@
 		AEC45D7A1D9B4813006EAE69 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AECE6BD11D9E087F004E964A /* AddRestaurantViewController.swift */,
 				AEC45D4B1D9B44C8006EAE69 /* LoginViewController.swift */,
 				AEA0A48C1D9CA5C100D64A8C /* RestaurantListViewController.swift */,
 			);
@@ -222,6 +230,7 @@
 		AEC45D811D9B5416006EAE69 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AECE6BCF1D9E07F2004E964A /* AddRestaurantViewControllerTests.swift */,
 				AEC45D821D9B544D006EAE69 /* LoginViewControllerTests.swift */,
 				AE9B311D1D9CF59E001C8FEE /* RestaurantListViewControllerTests.swift */,
 			);
@@ -261,6 +270,14 @@
 				AECE6BCD1D9DF74C004E964A /* URLRequest+HttpUtilitiesTests.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AECE6BD31D9E115C004E964A /* Test Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AECE6BD41D9E3DD2004E964A /* XCTestCase+Wait.swift */,
+			);
+			name = "Test Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECE6BD21D9E087F004E964A /* AddRestaurantViewController.swift in Sources */,
 				AEC45D4A1D9B44C8006EAE69 /* AppDelegate.swift in Sources */,
 				AEC45D801D9B49B5006EAE69 /* AutoLayoutButton.swift in Sources */,
 				AEA0A48F1D9CAFDD00D64A8C /* AutoLayoutLabel.swift in Sources */,
@@ -419,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECE6BD01D9E07F2004E964A /* AddRestaurantViewControllerTests.swift in Sources */,
 				AEC45D831D9B544D006EAE69 /* LoginViewControllerTests.swift in Sources */,
 				AEA0A4881D9BAACD00D64A8C /* MockOsusumeSession.swift in Sources */,
 				AEC45D861D9B6923006EAE69 /* OsusumeApiStoreTests.swift in Sources */,
@@ -432,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC45D6D1D9B44C8006EAE69 /* osusumeUITests.swift in Sources */,
+				AECE6BD51D9E3DD2004E964A /* XCTestCase+Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
