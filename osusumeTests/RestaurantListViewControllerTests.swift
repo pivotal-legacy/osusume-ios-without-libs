@@ -45,7 +45,9 @@ class RestaurantListViewControllerTests: XCTestCase {
             for: nil
         )
 
-        XCTAssertTrue(self.restaurantListViewController.presentedViewController is LoginViewController)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+            XCTAssertTrue(self.restaurantListViewController.presentedViewController is LoginViewController)
+        })
     }
 
     func test_showsAddRestaurantButton() {
