@@ -76,6 +76,9 @@ class LoginViewController: UIViewController {
     private func setupTextFields() {
         self.nameTextField.placeholder = "Name"
         self.passwordTextField.placeholder = "Password"
+
+        self.nameTextField.autocapitalizationType = UITextAutocapitalizationType.none
+        self.passwordTextField.autocapitalizationType = UITextAutocapitalizationType.none
     }
     
     private func setupButton() {
