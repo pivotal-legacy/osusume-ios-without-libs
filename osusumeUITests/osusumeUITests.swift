@@ -32,5 +32,6 @@ class osusumeUITests: XCTestCase {
         self.tapAndWaitForExpectedElementToBeVisible(expectedElement: addRestaurantScreenText, tappableElement: addRestaurantButton)
 
         XCTAssertTrue(addRestaurantScreenText.exists)
+        XCTAssertTrue(XCUIApplication().textFields["RestaurantNameTextField"].isHittable)
     }
 }
